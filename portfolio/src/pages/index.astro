@@ -1,0 +1,352 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-[90vh] flex items-center px-4 sm:px-6 lg:px-8 animate-fade-in">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Columna Izquierda: Presentación -->
+                <div class="order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-light-primary/10 to-light-secondary/10 dark:from-dark-primary/10 dark:to-dark-secondary/10 rounded-full mb-6">
+                        <span class="text-light-primary dark:text-dark-primary font-medium">👋 ¡Hola! Soy</span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
+                        <span class="text-light-primary dark:text-dark-primary">Aranza</span> Sue Díaz Tobar
+                    </h1>
+                    
+                    <h2 class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-medium">
+                        Ingeniera Civil en Computación | 
+                        <span class="text-light-primary dark:text-dark-primary font-semibold">Cloud Solutions</span> & 
+                        <span class="text-light-primary dark:text-dark-primary font-semibold">Technical Sales</span>
+                    </h2>
+                    
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+                        Especializada en diseñar y comunicar soluciones tecnológicas escalables. 
+                        Combino conocimientos técnicos en <strong>cloud computing</strong> y <strong>IA</strong> 
+                        con habilidades de <strong>comunicación técnica</strong> para actuar como puente entre 
+                        equipos de negocio y tecnología.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#proyectos" 
+                           class="px-6 sm:px-8 py-3 bg-gradient-to-r from-light-primary to-light-secondary dark:from-dark-primary dark:to-dark-secondary text-white font-semibold rounded-lg hover:opacity-90 transition-all hover:scale-105 shadow-lg text-sm sm:text-base">
+                            Ver Proyectos Académicos
+                        </a>
+                        <a href="/Aranza Sue Díaz Tobar CV_ArquitectoCloud.pdf" 
+                           target="_blank"
+                           class="px-6 sm:px-8 py-3 bg-white dark:bg-gray-800 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-semibold rounded-lg hover:bg-light-primary/5 dark:hover:bg-dark-primary/5 transition-all text-sm sm:text-base">
+                            Descargar CV
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna Derecha: Avatar -->
+                <!-- 📸 CAMBIA ESTA FOTO: Reemplaza la URL con tu foto -->
+                <div class="order-1 lg:order-2 relative flex justify-center lg:justify-end">
+                    <div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-8 border-white dark:border-gray-800 shadow-2xl">
+                        <!-- REEMPLAZA ESTA URL CON TU FOTO -->
+                        <img 
+                            src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            alt="Foto profesional de Aranza Díaz - Ingeniera Civil en Computación" 
+                            class="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-light-primary/20 to-transparent dark:from-dark-primary/20"></div>
+                    </div>
+                    
+                    <!-- Badges de Certificaciones -->
+                    <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                        <div class="bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 flex items-center gap-2">
+                            <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                                <span class="text-blue-600 dark:text-blue-300 text-xs font-bold">A</span>
+                            </div>
+                            <span class="text-sm font-medium">AWS Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfil Profesional -->
+    <section class="py-16 sm:py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">Perfil Profesional</h2>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8 md:p-12 animate-slide-up">
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                    Estudiante de <strong>Ingeniería Civil en Computación</strong> en la UTEM con 
+                    certificaciones en <strong>AWS Cloud Foundations</strong> y <strong>Microsoft Security</strong>. 
+                    Mi enfoque está en el diseño de soluciones cloud y la comunicación efectiva de valor técnico.
+                </p>
+                
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                    Busco una práctica profesional en <strong>Cloud Solution Architecture</strong> o 
+                    <strong>Technical Sales</strong> donde pueda aplicar mis conocimientos en 
+                    infraestructura cloud, arquitecturas de software y mi capacidad para 
+                    <strong>traducir necesidades de negocio en soluciones técnicas</strong>.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-8 border-t border-gray-100 dark:border-gray-700">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-light-primary dark:text-dark-primary">4+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Certificaciones Cloud & Security</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-light-primary dark:text-dark-primary">3+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Proyectos Académicos</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-light-primary dark:text-dark-primary">2</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Roles de Liderazgo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Académicos - CON PROYECTOS REALES -->
+    <section id="proyectos" class="py-16 sm:py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">Proyectos Académicos</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Proyecto 1: ERP EudoraVinos -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-cyan-400 relative">
+                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                            <span class="text-white text-2xl font-bold">ERP</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold">Sistema ERP - EudoraVinos</h3>
+                        </div>
+                        
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+                            Desarrollo frontend para sistema ERP de gestión vitivinícola. 
+                            Implementación de módulos específicos para control de inventario y ventas.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded-full">UI/UX</span>
+                        </div>
+                        
+                        <div class="space-y-2 text-sm">
+                            <p class="text-gray-700 dark:text-gray-300"><strong>Rol:</strong> Desarrolladora Frontend</p>
+                            <p class="text-gray-700 dark:text-gray-300"><strong>Cliente:</strong> EudoraVinos</p>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                <strong>Logro:</strong> Levantamiento de requerimientos directo con usuarios finales
+                            </p>
+                        </div>
+                        
+                        <a href="https://eudoravinos.cl/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="inline-block mt-4 text-light-primary dark:text-dark-primary font-medium hover:underline text-sm">
+                            Visitar sitio →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2: Bot Conversacional Alloxentric -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-400 relative">
+                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                            <span class="text-white text-2xl font-bold">IA</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold">Bot Conversacional con RAG</h3>
+                        </div>
+                        
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+                            Implementación de arquitectura RAG para bot conversacional utilizando 
+                            bases de datos vectoriales y modelos de lenguaje (LLMs).
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">IA/ML</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded-full">Vector DB</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">LLMs</span>
+                        </div>
+                        
+                        <div class="space-y-2 text-sm">
+                            <p class="text-gray-700 dark:text-gray-300"><strong>Rol:</strong> Desarrolladora de IA</p>
+                            <p class="text-gray-700 dark:text-gray-300"><strong>Empresa:</strong> Alloxentric</p>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                <strong>Logro:</strong> Participación en despliegue en ambiente productivo
+                            </p>
+                        </div>
+                        
+                        <a href="https://alloxentric.com/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="inline-block mt-4 text-light-primary dark:text-dark-primary font-medium hover:underline text-sm">
+                            Visitar empresa →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3: App Votación Móvil -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-orange-400 to-red-400 relative">
+                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                            <span class="text-white text-2xl font-bold">App</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold">App de Votación Digital</h3>
+                        </div>
+                        
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+                            Aplicación móvil completa para procesos de votación digital con 
+                            autenticación segura y conteo en tiempo real. Proyecto académico.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">Flutter</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full">APIs</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded-full">Security</span>
+                        </div>
+                        
+                        <div class="space-y-2 text-sm">
+                            <p class="text-gray-700 dark:text-gray-300"><strong>Rol:</strong> Líder de Proyecto</p>
+                            <p class="text-gray-700 dark:text-gray-300"><strong>Institución:</strong> UTEM</p>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                <strong>Logro:</strong> Diseño de arquitectura y testing de seguridad
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section id="habilidades" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">Áreas de Especialización</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cloud Solutions -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <span class="text-white text-xl">☁️</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cloud Solutions</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            AWS Foundations
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            IAM & VPC
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Cloud Architecture
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Desarrollo -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <span class="text-white text-xl">💻</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Desarrollo</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Frontend (React, Astro)
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Mobile (Flutter)
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Python & JavaScript
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Technical Sales -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <span class="text-white text-xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Technical Sales</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Comunicación Técnica
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Levantamiento Requerimientos
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Propuesta de Valor
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Gestión -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <span class="text-white text-xl">⚙️</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Gestión</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Metodologías Ágiles
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Liderazgo de Proyectos
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
+                            Six Sigma Basics
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 sm:py-20 bg-gradient-to-r from-light-primary/10 to-light-secondary/10 dark:from-dark-primary/10 dark:to-dark-secondary/10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+             <!--<h2 class="text-2xl sm:text-3xl font-bold mb-6">¿Buscas talento en Cloud Solutions?</h2>-->
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                Estoy buscando una práctica profesional donde pueda contribuir con mis habilidades 
+                técnicas y de comunicación. Idealmente en roles junior de Cloud Architecture, Technical Sales 
+                o Análisis de Soluciones.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:aranza.diaz01@gmail.com?subject=Interés en perfil Cloud Solutions&body=Hola Aranza,"
+                   class="px-8 py-3 bg-gradient-to-r from-light-primary to-light-secondary dark:from-dark-primary dark:to-dark-secondary text-white font-semibold rounded-lg hover:opacity-90 transition-all shadow-lg">
+                    Contactar por Email
+                </a>
+                <a href="/Aranza Sue Díaz Tobar CV_ArquitectoCloud.pdf"
+                   target="_blank"
+                   class="px-8 py-3 bg-white dark:bg-gray-800 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-semibold rounded-lg hover:bg-light-primary/5 dark:hover:bg-dark-primary/5 transition-all">
+                    Descargar CV Completo
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>
