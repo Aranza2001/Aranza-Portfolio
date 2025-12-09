@@ -3,62 +3,63 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-    <!-- Hero Section -->
-    <section id="inicio" class="min-h-[90vh] flex items-center px-4 sm:px-6 lg:px-8 animate-fade-in">
+    <!-- Hero Section - CON DEGRADADO LILA -->
+    <section id="inicio" class="min-h-[90vh] flex items-center px-4 sm:px-6 lg:px-8 animate-fade-in bg-gradient-hero dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
         <div class="container mx-auto max-w-6xl">
             <div class="grid lg:grid-cols-2 gap-10 items-center">
                 <!-- Columna Izquierda: Presentación -->
                 <div class="order-2 lg:order-1">
+                    <!-- Badge mejorado -->
                     
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-                        <span class="text-light-primary dark:text-dark-primary">Aranza</span> Sue Díaz Tobar
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-light-primary to-light-secondary bg-clip-text text-transparent dark:from-dark-primary dark:to-dark-secondary">
+                        Aranza Sue Díaz Tobar
                     </h1>
                     
-                    <h2 class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-medium">
+                    <h2 class="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mb-8 font-medium">
                         Ingeniera Civil en Computación | 
                         <span class="text-light-primary dark:text-dark-primary font-semibold">Cloud Solutions</span> & 
                         <span class="text-light-primary dark:text-dark-primary font-semibold">Technical Sales</span>
                     </h2>
                     
-                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+                    <p class="text-lg text-gray-800 dark:text-gray-300 mb-8 leading-relaxed">
                         Especializada en diseñar y comunicar soluciones tecnológicas escalables. 
-                        Combino conocimientos técnicos en <strong>cloud computing</strong> y <strong>IA</strong> 
-                        con habilidades de <strong>comunicación técnica</strong> para actuar como puente entre 
+                        Combino conocimientos técnicos en <strong class="text-light-primary dark:text-dark-primary">cloud computing</strong> y <strong class="text-light-primary dark:text-dark-primary">IA</strong> 
+                        con habilidades de <strong class="text-light-primary dark:text-dark-primary">comunicación técnica</strong> para actuar como puente entre 
                         equipos de negocio y tecnología.
                     </p>
                     
                     <div class="flex flex-wrap gap-4">
                         <a href="#proyectos" 
-                           class="px-6 sm:px-8 py-3 bg-gradient-to-r from-light-primary to-light-secondary dark:from-dark-primary dark:to-dark-secondary text-white font-semibold rounded-lg hover:opacity-90 transition-all hover:scale-105 shadow-lg text-sm sm:text-base">
-                            Ver Proyectos Académicos
+                           class="px-6 sm:px-8 py-3 bg-gradient-to-r from-light-primary to-light-secondary dark:from-dark-primary dark:to-dark-secondary text-white font-semibold rounded-lg hover:opacity-90 transition-all hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base">
+                             Ver Proyectos Académicos
                         </a>
-                        <a href="../../public/Aranza Sue Díaz Tobar CV.pdf" 
+                        <a href="/Aranza Sue Díaz Tobar CV.pdf" 
                            target="_blank"
-                           class="px-6 sm:px-8 py-3 bg-white dark:bg-gray-800 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-semibold rounded-lg hover:bg-light-primary/5 dark:hover:bg-dark-primary/5 transition-all text-sm sm:text-base">
-                            Descargar CV
+                           class="px-6 sm:px-8 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-semibold rounded-lg hover:bg-light-primary/10 dark:hover:bg-dark-primary/10 transition-all text-sm sm:text-base">
+                             Descargar CV
                         </a>
                     </div>
                 </div>
                 
                 <!-- Columna Derecha: Avatar -->
                 <div class="order-1 lg:order-2 relative flex justify-center lg:justify-end">
-                    <div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-8 border-white dark:border-gray-800 shadow-2xl">
-                        <!-- Acá abajito va la foto-->
+                    <div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-8 border-white/50 dark:border-gray-800/50 shadow-2xl">
+                        <!-- Acá abajito va la foto -->
                         <img 
-                            src="../../public/Foto-Perfil.jpg" 
+                            src="/Foto-Perfil.jpg" 
                             alt="Foto profesional de Aranza Díaz - Ingeniera Civil en Computación" 
-                            class="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                            class="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                         />
-                        <div class="absolute inset-0 bg-gradient-to-t from-light-primary/20 to-transparent dark:from-dark-primary/20"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-light-primary/30 to-transparent dark:from-dark-primary/30 opacity-70"></div>
                     </div>
                     
-                    <!-- Badges de Certificaciones -->
+                    <!-- Badges de Certificaciones mejorado -->
                     <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-                        <div class="bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 flex items-center gap-2">
-                            <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
-                                <span class="text-blue-600 dark:text-blue-300 text-xs font-bold">A</span>
+                        <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-light-primary/20 dark:border-dark-primary/20 flex items-center gap-2 hover:scale-105 transition-transform">
+                            <div class="w-6 h-6 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs font-bold">A</span>
                             </div>
-                            <span class="text-sm font-medium">AWS & Microsoft Azure Certified</span>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-200">AWS & Azure Certified</span>
                         </div>
                     </div>
                 </div>
@@ -66,159 +67,191 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- Sección Sobre Mi -->
-    <section id="sobremi" class="py-16 sm:py-15 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <!-- Sección Sobre Mi - CON FONDO DEGRADADO -->
+    <section id="sobremi" class="py-16 sm:py-20 bg-gradient-to-b from-light-background via-light-surface to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">Sobre Mí</h2>
-            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8 md:p-12 animate-slide-up">
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                    Soy estudiante de <strong>Ingeniería Civil en Computación</strong> en la UTEM con 
-                    certificaciones en <strong>AWS Cloud Foundations</strong> y <strong>Microsoft Security</strong>. 
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4 bg-gradient-to-r from-light-primary to-light-secondary bg-clip-text text-transparent dark:from-dark-primary dark:to-dark-secondary">
+                    Sobre Mí
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-light-primary to-light-secondary mx-auto rounded-full dark:from-dark-primary dark:to-dark-secondary"></div>
+            </div>
+            
+            <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 sm:p-8 md:p-12 animate-slide-up border border-light-primary/10 dark:border-dark-primary/10">
+                <p class="text-lg text-gray-800 dark:text-gray-300 mb-6 leading-relaxed">
+                    Soy estudiante de <strong class="text-light-primary dark:text-dark-primary">Ingeniería Civil en Computación</strong> en la UTEM con 
+                    certificaciones en <strong class="text-light-primary dark:text-dark-primary">AWS Cloud Foundations</strong> y <strong class="text-light-primary dark:text-dark-primary">Microsoft Security</strong>. 
                     Mi enfoque está en el diseño de soluciones cloud y la comunicación efectiva de valor técnico.
                 </p>
                 
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                    Busco una práctica profesional en <strong>Cloud Solution Architecture</strong> o 
-                    <strong>Technical Sales</strong> donde pueda aplicar mis conocimientos en 
+                <p class="text-lg text-gray-800 dark:text-gray-300 mb-6 leading-relaxed">
+                    Busco una práctica profesional en <strong class="text-light-primary dark:text-dark-primary">Cloud Solution Architecture</strong> o 
+                    <strong class="text-light-primary dark:text-dark-primary">Technical Sales</strong> donde pueda aplicar mis conocimientos en 
                     infraestructura cloud, arquitecturas de software y mi capacidad para 
-                    <strong>traducir necesidades de negocio en soluciones técnicas</strong>.
+                    <strong class="text-light-primary dark:text-dark-primary">traducir necesidades de negocio en soluciones técnicas</strong>.
                 </p>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-8 border-t border-gray-100 dark:border-gray-700">
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-light-primary dark:text-dark-primary">4+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Certificaciones Cloud & Security</div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 pt-8 border-t border-light-primary/20 dark:border-dark-primary/20">
+                    <div class="text-center p-4 rounded-xl bg-gradient-to-br from-light-primary/5 to-light-secondary/5 dark:from-dark-primary/5 dark:to-dark-secondary/5 border border-light-primary/10 dark:border-dark-primary/10">
+                        <div class="text-3xl font-bold text-light-primary dark:text-dark-primary mb-2">4+</div>
+                        <div class="text-sm text-gray-700 dark:text-gray-300 font-medium">Certificaciones Cloud & Security</div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-light-primary dark:text-dark-primary">3+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Proyectos Académicos</div>
+                    <div class="text-center p-4 rounded-xl bg-gradient-to-br from-light-primary/5 to-light-secondary/5 dark:from-dark-primary/5 dark:to-dark-secondary/5 border border-light-primary/10 dark:border-dark-primary/10">
+                        <div class="text-3xl font-bold text-light-primary dark:text-dark-primary mb-2">3+</div>
+                        <div class="text-sm text-gray-700 dark:text-gray-300 font-medium">Proyectos Académicos</div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-light-primary dark:text-dark-primary">2</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Roles de Liderazgo</div>
+                    <div class="text-center p-4 rounded-xl bg-gradient-to-br from-light-primary/5 to-light-secondary/5 dark:from-dark-primary/5 dark:to-dark-secondary/5 border border-light-primary/10 dark:border-dark-primary/10">
+                        <div class="text-3xl font-bold text-light-primary dark:text-dark-primary mb-2">2</div>
+                        <div class="text-sm text-gray-700 dark:text-gray-300 font-medium">Roles de Liderazgo</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Proyectos Académicos -->
-    <section id="proyectos" class="py-16 sm:py-20 bg-gray-50 dark:bg-gray-900">
+    <!-- Proyectos Académicos - CON DEGRADADO DE FONDO -->
+    <section id="proyectos" class="py-16 sm:py-20 bg-gradient-to-b from-white via-light-surface to-light-background dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">Proyectos Académicos</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4 bg-gradient-to-r from-light-primary to-light-secondary bg-clip-text text-transparent dark:from-dark-primary dark:to-dark-secondary">
+                    Proyectos Académicos
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-light-primary to-light-secondary mx-auto rounded-full dark:from-dark-primary dark:to-dark-secondary"></div>
+                <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Proyectos desarrollados durante mi formación académica con tecnologías modernas
+                </p>
+            </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Proyecto 1: ERP EudoraVinos -->
-                <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                    <div class="h-48 bg-gradient-to-r from-blue-400 to-cyan-400 relative">
-                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-                            <span class="text-white text-2xl font-bold">ERP</span>
+                <article class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-light-primary/10 dark:border-dark-primary/10">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-cyan-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-4 left-4">
+                            <span class="text-white text-sm font-semibold bg-black/30 px-3 py-1 rounded-full">ERP System</span>
                         </div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold">Sistema ERP - EudoraVinos</h3>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Sistema ERP - EudoraVinos</h3>
                         </div>
                         
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+                        <p class="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
                             Desarrollo frontend para sistema ERP de gestión vitivinícola. 
                             Implementación de módulos específicos para control de inventario y ventas.
                         </p>
                         
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">React</span>
-                            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded-full">UI/UX</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full font-medium">React</span>
+                            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 text-xs rounded-full font-medium">JavaScript</span>
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 text-xs rounded-full font-medium">UI/UX</span>
                         </div>
                         
-                        <div class="space-y-2 text-sm">
-                            <p class="text-gray-700 dark:text-gray-300"><strong>Rol:</strong> Desarrolladora Frontend</p>
-                            <p class="text-gray-700 dark:text-gray-300"><strong>Cliente:</strong> EudoraVinos</p>
-                            <p class="text-gray-700 dark:text-gray-300">
-                                <strong>Logro:</strong> Levantamiento de requerimientos directo con usuarios finales
-                            </p>
+                        <div class="space-y-3 text-sm mb-4">
+                            <div class="flex items-start">
+                                
+                                <div>
+                                    <p class="font-medium text-gray-800 dark:text-gray-200">Rol: Desarrolladora Frontend</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-xs">Levantamiento de requerimientos directo con usuarios</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <a href="https://eudoravinos.cl/" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           class="inline-block mt-4 text-light-primary dark:text-dark-primary font-medium hover:underline text-sm">
-                            Visitar sitio →
+                           class="inline-flex items-center gap-2 mt-4 text-light-primary dark:text-dark-primary font-medium hover:gap-3 transition-all group/link">
+                            <span>Visitar sitio</span>
+                            <span class="group-hover/link:translate-x-1 transition-transform">→</span>
                         </a>
                     </div>
                 </article>
                 
                 <!-- Proyecto 2: Bot Conversacional Alloxentric -->
-                <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-400 relative">
-                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-                            <span class="text-white text-2xl font-bold">IA</span>
+                <article class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-light-primary/10 dark:border-dark-primary/10">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-4 left-4">
+                            <span class="text-white text-sm font-semibold bg-black/30 px-3 py-1 rounded-full">AI Chatbot</span>
                         </div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold">Bot Conversacional con RAG</h3>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Bot Conversacional con RAG</h3>
                         </div>
                         
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+                        <p class="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
                             Implementación de arquitectura RAG para bot conversacional utilizando 
                             bases de datos vectoriales y modelos de lenguaje (LLMs).
                         </p>
                         
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">Python</span>
-                            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">IA/ML</span>
-                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded-full">Vector DB</span>
-                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">LLMs</span>
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 text-xs rounded-full font-medium">Python</span>
+                            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 text-xs rounded-full font-medium">IA/ML</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full font-medium">LLMs</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs rounded-full font-medium">Vector DB</span>
                         </div>
                         
-                        <div class="space-y-2 text-sm">
-                            <p class="text-gray-700 dark:text-gray-300"><strong>Rol:</strong> Desarrolladora de IA</p>
-                            <p class="text-gray-700 dark:text-gray-300"><strong>Empresa:</strong> Alloxentric</p>
-                            <p class="text-gray-700 dark:text-gray-300">
-                                <strong>Logro:</strong> Participación en despliegue en ambiente productivo
-                            </p>
+                        <div class="space-y-3 text-sm mb-4">
+                            <div class="flex items-start">
+                                
+                                <div>
+                                    <p class="font-medium text-gray-800 dark:text-gray-200">Rol: Desarrolladora de IA</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-xs">Participación en despliegue productivo</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <a href="https://alloxentric.com/" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           class="inline-block mt-4 text-light-primary dark:text-dark-primary font-medium hover:underline text-sm">
-                            Visitar empresa →
+                           class="inline-flex items-center gap-2 mt-4 text-light-primary dark:text-dark-primary font-medium hover:gap-3 transition-all group/link">
+                            <span>Visitar empresa</span>
+                            <span class="group-hover/link:translate-x-1 transition-transform">→</span>
                         </a>
                     </div>
                 </article>
                 
                 <!-- Proyecto 3: App Votación Móvil -->
-                <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                    <div class="h-48 bg-gradient-to-r from-orange-400 to-red-400 relative">
-                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-                            <span class="text-white text-2xl font-bold">App</span>
+                <article class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-light-primary/10 dark:border-dark-primary/10">
+                    <div class="h-48 bg-gradient-to-r from-orange-500 to-red-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-4 left-4">
+                            <span class="text-white text-sm font-semibold bg-black/30 px-3 py-1 rounded-full">Mobile App</span>
                         </div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold">App de Votación Digital</h3>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">App de Votación Digital</h3>
                         </div>
                         
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+                        <p class="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
                             Aplicación móvil completa para procesos de votación digital con 
                             autenticación segura y conteo en tiempo real. Proyecto académico.
                         </p>
                         
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">Flutter</span>
-                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Firebase</span>
-                            <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full">APIs</span>
-                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded-full">Security</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full font-medium">Flutter</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full font-medium">Firebase</span>
+                            <span class="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 text-xs rounded-full font-medium">APIs</span>
+                            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs rounded-full font-medium">Security</span>
                         </div>
                         
-                        <div class="space-y-2 text-sm">
-                            <p class="text-gray-700 dark:text-gray-300"><strong>Rol:</strong> Líder de Proyecto</p>
-                            <p class="text-gray-700 dark:text-gray-300"><strong>Institución:</strong> UTEM</p>
-                            <p class="text-gray-700 dark:text-gray-300">
-                                <strong>Logro:</strong> Diseño de arquitectura y testing de seguridad
-                            </p>
+                        <div class="space-y-3 text-sm mb-4">
+                            <div class="flex items-start">
+                                
+                                <div>
+                                    <p class="font-medium text-gray-800 dark:text-gray-200">Rol: Líder de Proyecto</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-xs">Diseño de arquitectura y testing de seguridad</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="inline-flex items-center gap-2 mt-4 text-gray-500 dark:text-gray-400 font-medium">
+                            <span>Proyecto Académico UTEM</span>
                         </div>
                     </div>
                 </article>
@@ -226,237 +259,253 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- Habilidades Técnicas y blandas-->
-    <section id="habilidades" class="py-16 sm:py-20">
+    <!-- Habilidades Técnicas y blandas - CON NUEVO DISEÑO -->
+    <section id="habilidades" class="py-16 sm:py-20 bg-gradient-to-b from-light-background via-white to-light-surface dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">Áreas de Especialización</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4 bg-gradient-to-r from-light-primary to-light-secondary bg-clip-text text-transparent dark:from-dark-primary dark:to-dark-secondary">
+                    Áreas de Especialización
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-light-primary to-light-secondary mx-auto rounded-full dark:from-dark-primary dark:to-dark-secondary"></div>
+                <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Combinación de habilidades técnicas y blandas para soluciones integrales
+                </p>
+            </div>
             
             <!-- Habilidades Técnicas -->
             <div class="mb-16">
-                <h3 class="text-xl font-bold mb-6 text-light-primary dark:text-dark-primary">Habilidades Técnicas</h3>
+                <h3 class="text-xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200">
+                    <span class="bg-gradient-to-r from-light-primary to-light-secondary bg-clip-text text-transparent dark:from-dark-primary dark:to-dark-secondary">
+                         Habilidades Técnicas
+                    </span>
+                </h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Cloud Solutions -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">☁️</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">☁️</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Cloud Solutions</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Cloud Solutions</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                AWS Foundations
+                                <div class="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">AWS Foundations</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                IAM & VPC
+                                <div class="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">IAM & VPC</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Cloud Architecture
+                                <div class="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Cloud Architecture</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Desarrollo -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">💻</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">💻</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Desarrollo</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Desarrollo</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Frontend (React, Astro)
+                                <div class="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Frontend (React, Astro)</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Mobile (Flutter)
+                                <div class="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Mobile (Flutter)</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Python & JavaScript
+                                <div class="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Python & JavaScript</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Technical Sales -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">📊</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">📊</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Technical Sales</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Technical Sales</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Comunicación Técnica
+                                <div class="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Comunicación Técnica</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Levantamiento Requerimientos
+                                <div class="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Levantamiento Requerimientos</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Propuesta de Valor
+                                <div class="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Propuesta de Valor</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Gestión -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">⚙️</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">⚙️</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Gestión</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Gestión</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Metodologías Ágiles
+                                <div class="w-2 h-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Metodologías Ágiles</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Liderazgo de Proyectos
+                                <div class="w-2 h-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Liderazgo de Proyectos</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Six Sigma Basics
+                                <div class="w-2 h-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Six Sigma Basics</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             
-            <!-- Habilidades Blandas - CON LOS MISMOS EFECTOS -->
+            <!-- Habilidades Blandas -->
             <div>
-                <h3 class="text-xl font-bold mb-6 text-light-primary dark:text-dark-primary">Habilidades Blandas</h3>
+                <h3 class="text-xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200">
+                    <span class="bg-gradient-to-r from-light-primary to-light-secondary bg-clip-text text-transparent dark:from-dark-primary dark:to-dark-secondary">
+                         Habilidades Blandas 
+                    </span>
+                </h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Comunicación -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">💬</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">💬</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Comunicación Efectiva</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Comunicación Efectiva</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Explicación técnica a no técnicos
+                                <div class="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Explicación técnica a no técnicos</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Presentaciones claras
+                                <div class="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Presentaciones claras</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Escucha activa
+                                <div class="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Escucha activa</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Trabajo en Equipo -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">👥</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">👥</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Trabajo en Equipo</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Trabajo en Equipo</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Colaboración multidisciplinaria
+                                <div class="w-2 h-2 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Colaboración multidisciplinaria</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Respeto a la diversidad
+                                <div class="w-2 h-2 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Respeto a la diversidad</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Contribución al éxito colectivo
+                                <div class="w-2 h-2 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Contribución al éxito colectivo</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Resolución de Problemas -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">🔍</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">🔍</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Resolución de Problemas</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Resolución de Problemas</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Pensamiento analítico
+                                <div class="w-2 h-2 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Pensamiento analítico</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Soluciones creativas
+                                <div class="w-2 h-2 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Soluciones creativas</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Decisiones basadas en datos
+                                <div class="w-2 h-2 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Decisiones basadas en datos</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Adaptabilidad -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">🔄</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-rose-500 to-pink-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">🔄</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Adaptabilidad</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Adaptabilidad</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Aprendizaje continuo
+                                <div class="w-2 h-2 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Aprendizaje continuo</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Flexibilidad ante cambios
+                                <div class="w-2 h-2 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Flexibilidad ante cambios</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Gestión de la incertidumbre
+                                <div class="w-2 h-2 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Gestión de la incertidumbre</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Liderazgo -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">🌟</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-violet-500 to-purple-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">🌟</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Liderazgo</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Liderazgo</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Motivación de equipos
+                                <div class="w-2 h-2 bg-gradient-to-r from-violet-500 to-purple-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Motivación de equipos</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Delegación efectiva
+                                <div class="w-2 h-2 bg-gradient-to-r from-violet-500 to-purple-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Delegación efectiva</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Toma de decisiones
+                                <div class="w-2 h-2 bg-gradient-to-r from-violet-500 to-purple-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Toma de decisiones</span>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Gestión del Tiempo -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="text-white text-xl">⏱️</span>
+                    <div class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-light-primary/10 dark:border-dark-primary/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg">
+                            <span class="text-white text-2xl">⏱️</span>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Gestión del Tiempo</h4>
-                        <ul class="space-y-2">
+                        <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Gestión del Tiempo</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Priorización de tareas
+                                <div class="w-2 h-2 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Priorización de tareas</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Cumplimiento de plazos
+                                <div class="w-2 h-2 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Cumplimiento de plazos</span>
                             </li>
                             <li class="flex items-center text-sm">
-                                <div class="w-2 h-2 bg-light-primary dark:bg-dark-primary rounded-full mr-3"></div>
-                                Organización eficiente
+                                <div class="w-2 h-2 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full mr-3"></div>
+                                <span class="text-gray-700 dark:text-gray-300">Organización eficiente</span>
                             </li>
                         </ul>
                     </div>
@@ -465,24 +514,38 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- Una práctica decente porfis porfis -->
-    <section class="py-16 sm:py-20 bg-gradient-to-r from-light-primary/10 to-light-secondary/10 dark:from-dark-primary/10 dark:to-dark-secondary/10">
+   
+    <section class="py-16 sm:py-20 bg-gradient-to-r from-light-primary/15 via-light-secondary/10 to-light-primary/15 dark:from-dark-primary/10 dark:via-dark-secondary/5 dark:to-dark-primary/10">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                Estoy buscando una práctica profesional donde pueda contribuir con mis habilidades 
-                técnicas y de comunicación. Idealmente en roles junior de Cloud Architecture, Technical Sales 
-                o Análisis de Soluciones.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="mailto:aranza.diaz01@gmail.com?subject=Interés en perfil Cloud Solutions&body=Hola Aranza,"
-                   class="px-8 py-3 bg-gradient-to-r from-light-primary to-light-secondary dark:from-dark-primary dark:to-dark-secondary text-white font-semibold rounded-lg hover:opacity-90 transition-all shadow-lg">
-                    Contactar por Email
-                </a>
-                <a href="../../public/Aranza Sue Díaz Tobar CV.pdf"
-                   target="_blank"
-                   class="px-8 py-3 bg-white dark:bg-gray-800 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-semibold rounded-lg hover:bg-light-primary/5 dark:hover:bg-dark-primary/5 transition-all">
-                    Descargar CV Completo
-                </a>
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-4 bg-gradient-to-r from-light-primary to-light-secondary bg-clip-text text-transparent dark:from-dark-primary dark:to-dark-secondary">
+                        ¿Buscas talento en Cloud Solutions?
+                    </h2>
+                    <p class="text-lg text-gray-800 dark:text-gray-300">
+                        Estoy buscando una práctica profesional donde pueda contribuir con mis habilidades 
+                        técnicas y de comunicación. Idealmente en roles junior de Cloud Architecture, Technical Sales 
+                        o Análisis de Soluciones.
+                    </p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:aranza.diaz01@gmail.com?subject=Interés en perfil Cloud Solutions&body=Hola Aranza,"
+                       class="px-8 py-3 bg-gradient-to-r from-light-primary to-light-secondary dark:from-dark-primary dark:to-dark-secondary text-white font-semibold rounded-xl hover:opacity-90 transition-all hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2">
+                        
+                        <span>Contactar por Email</span>
+                    </a>
+                    <a href="/Aranza Sue Díaz Tobar CV.pdf"
+                       target="_blank"
+                       class="px-8 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-semibold rounded-xl hover:bg-light-primary/10 dark:hover:bg-dark-primary/10 transition-all hover:scale-105 flex items-center gap-2">
+                        
+                        <span>Descargar CV Completo</span>
+                    </a>
+                </div>
+                
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-8">
+                    Disponible para prácticas profesionales a partir de diciembre 2025
+                </p>
             </div>
         </div>
     </section>
