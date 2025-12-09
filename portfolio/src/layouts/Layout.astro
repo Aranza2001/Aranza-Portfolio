@@ -8,7 +8,15 @@ import '../styles/global.css';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aranza Díaz | Cloud Solutions & Technical Sales</title>
-    <meta name="description" content="Ingeniera Civil en Computación | Especialista en Cloud Solutions, IA & Technical Sales | Portfolio profesional">
+    
+    <!-- Descripción-->
+    <meta name="description" content="Ingeniera Civil en Computación especializada en Cloud Solutions, IA y Technical Sales. Portfolio profesional con proyectos académicos y habilidades técnicas.">
+    
+    <!-- Keywords-->
+    <meta name="keywords" content="Cloud Solutions, Technical Sales, Ingeniería Civil en Computación, AWS, IA, Portfolio, Desarrollo Web">
+    
+    <!-- Autor -->
+    <meta name="author" content="Aranza Sue Díaz Tobar">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +26,17 @@ import '../styles/global.css';
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Aranza Díaz | Cloud Solutions Architect">
-    <meta property="og:description" content="Especialista en soluciones cloud, IA y arquitecturas escalables">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://tu-dominio.com">
+    <!-- Open Graph / Social Media - ACTUALIZADO -->
+    <meta property="og:title" content="Aranza Díaz | Portfolio Profesional">
+    <meta property="og:description" content="Especialista en soluciones cloud, IA y arquitecturas escalables. Ingeniera Civil en Computación UTEM.">
+    <meta property="og:image" content="/og-image.png"> <!-- RECOMENDACIÓN: Crear imagen OG -->
+    <meta property="og:url" content="https://github.com/Aranza2001"> 
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aranza Díaz | Cloud Solutions">
+    <meta name="twitter:description" content="Portfolio profesional de Ingeniera Civil en Computación">
 </head>
 <body class="bg-light-background text-light-text dark:bg-dark-background dark:text-dark-text font-sans transition-colors duration-300 min-h-screen">
     
@@ -41,16 +55,17 @@ import '../styles/global.css';
                 </div>
                 
                 <!-- Navegación y Toggle -->
-                <div class="flex items-center gap-6">
+                <div class="flex items-center gap-8">
                     <!-- Menú -->
                     <ul class="flex flex-wrap justify-center gap-4 sm:gap-8">
                         <li><a href="#inicio" class="font-medium hover:text-light-primary dark:hover:text-dark-primary transition-colors text-sm sm:text-base">Inicio</a></li>
+                        <li><a href="#sobremi" class="font-medium hover:text-light-primary dark:hover:text-dark-primary transition-colors text-sm sm:text-base">Sobre mí</a></li>
                         <li><a href="#proyectos" class="font-medium hover:text-light-primary dark:hover:text-dark-primary transition-colors text-sm sm:text-base">Proyectos</a></li>
                         <li><a href="#habilidades" class="font-medium hover:text-light-primary dark:hover:text-dark-primary transition-colors text-sm sm:text-base">Habilidades</a></li>
                         <li><a href="#contacto" class="font-medium hover:text-light-primary dark:hover:text-dark-primary transition-colors text-sm sm:text-base">Contacto</a></li>
                     </ul>
                     
-                    <!-- Botón Modo Oscuro - FUNCIONAL -->
+                    <!-- Botón Modo Oscuro -->
                     <button id="themeToggle" aria-label="Cambiar tema" class="p-2.5 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors shadow-sm">
                         <!-- Sol - Visible en modo claro -->
                         <svg id="sunIcon" class="w-5 h-5 text-yellow-500 transition-all" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +105,8 @@ import '../styles/global.css';
                            aria-label="LinkedIn">
                             LinkedIn
                         </a>
-                        <a href="https://github.com/tu-usuario" 
+                        <!-- ACTUALIZAR: Reemplaza 'tu-usuario' con tu usuario real -->
+                        <a href="https://github.com/Aranza2001" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            class="text-gray-700 dark:text-gray-300 hover:text-light-primary dark:hover:text-dark-primary transition-colors font-medium"
@@ -103,14 +119,15 @@ import '../styles/global.css';
                             Contacto
                         </a>
                     </div>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">© 2024 - Portfolio profesional</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">© 2025 - Portfolio profesional</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500 mt-2">Desarrollado con Astro + Tailwind CSS</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Script para Modo Oscuro - CORREGIDO Y FUNCIONAL -->
-   <script>
+    <!-- Script para Modo Oscuro -->
+    <script>
         // Wait for DOM to be ready
         document.addEventListener('DOMContentLoaded', () => {
             const themeToggle = document.getElementById('themeToggle');
@@ -151,9 +168,3 @@ import '../styles/global.css';
     </script>
 </body>
 </html>
-
-
-
-
-
-
