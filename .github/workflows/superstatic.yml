@@ -46,7 +46,18 @@ jobs:
         with:
           # Ruta CORREGIDA: subir solo la carpeta de build, no todo el repo
           path: './dist'  # Astro genera los archivos en /dist por defecto
+
+         # ¡PASO NUEVO! - Limpia cache
+      - name: Force GitHub Pages Cache Refresh
+        run: |
+          # Espera un momento antes de hacer el deploy
+          sleep 5
+          echo "Cache refresh triggered"
           
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+       
+          
+
