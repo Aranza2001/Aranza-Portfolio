@@ -25,7 +25,6 @@ Más allá de ser un requisito académico, este portfolio ha sido creado como un
 
 ##  Tecnologías Utilizadas
 
-El proyecto combina las bases fundamentales del desarrollo web con herramientas modernas para optimizar el rendimiento y la mantenibilidad:
 
 | Tecnología | Uso en el Proyecto |
 | :--- | :--- |
@@ -49,7 +48,7 @@ git clone https://github.com/Aranza2001/Aranza-Portfolio.git
 
 ### 2\. Instalar dependencias
 
-Instala las librerías necesarias ejecutando:
+Instalar las librerías necesarias ejecutando:
 
 npm install
 
@@ -64,7 +63,4 @@ Abrir en el navegador: `http://localhost:4321`
 
 *Proyecto desarrollado para la asignatura de Computación Móvil - Diciembre 2025*
 
-```
-
----
 
